@@ -27,7 +27,7 @@
         h2 {
             text-align: center;
         }
-        /* *******************  */
+        /* slow scroll  */
         
         @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap");
         * {
@@ -128,6 +128,7 @@
             transform: translateY(0);
             transition-delay: var(--delay);
         }
+        /* horizontal scroll */
         
         .full-screen {
             display: block;
@@ -208,11 +209,11 @@
             bottom: 2rem;
             right: 2rem;
         }
-        /* ************** */
     </style>
 </head>
 
 <body>
+    <!-- slow scroll -->
     <header class="container">
         <h2 class="container__headline">Wanna see something neat?</h2>
     </header>
@@ -229,7 +230,7 @@
         <h2 class="container__headline">That's pretty neat.</h2>
     </footer>
 
-    <!-- ************* -->
+    <!-- horizontal scroll -->
     <div id="page" class="site">
 
         <div id="feather" class="feather"></div>
@@ -383,6 +384,7 @@
 
     </div>
     <script>
+        // ***** slow scroll
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.to(".hero", {
@@ -409,7 +411,7 @@
         });
 
 
-        // ************
+        // ***** horizontal scroll
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
         ScrollTrigger.defaults({
